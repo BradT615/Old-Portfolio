@@ -131,6 +131,20 @@ body {
   border-bottom: 3px solid #34fcff;
 }
 
+/* * {
+  border: 1px solid red;
+} */
+.img-fluid {
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+}
+.mission-text {
+  padding: 20px;
+  font-size: 22px;
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+  /* border-left: transparent */
+}
 
 
 .projects-container {
@@ -202,9 +216,6 @@ body {
   }
 }
 
-/* * {
-  border: 1px solid red;
-} */
 .skill-icon {
   height: 15vh;
   width: 15vh;
