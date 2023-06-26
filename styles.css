@@ -135,15 +135,14 @@ body {
 
 .projects-container {
   display: flex;
+  width: 100%;
+  height: auto;
   justify-content: space-around;
   align-items: center;
-  vertical-align: middle;
   margin: auto;
-  flex-wrap: wrap;
 }
 .project {
   flex-basis: calc(33.33% - 10%);
-  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,27 +185,20 @@ body {
   color: var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .projects-container {
     flex-direction: column;
-    margin: 20px 5% 0 5%;
+    width: 90%;
+    gap: 40px;
   }
-
   .project {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-
   .project-image {
     max-width: 40%;
     height: auto;
-  }
-
-  .project-details {
-    justify-content: center;
-    gap: 50px;
-    width: 55%;
   }
 }
 
