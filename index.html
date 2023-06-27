@@ -6,14 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-
     <link rel="stylesheet" href="styles.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
-
     <title>Bradley Titus Portfolio</title>
 </head>
 <body>
@@ -57,9 +53,6 @@
     </div>
   </div>
     
-
-
-
   <div class="section" id="mission">
     <header class="d-inline-flex section-header">
       <h1>Mission</h1>
@@ -67,7 +60,7 @@
     <div class="container about-wrapper m-auto">
       <div class="row d-flex align-items-center justify-content-center">
         <div class="col-lg-8 col-sm-12">
-          <img class="img-fluid" src="assets/mission.jpg" alt="Description of image">
+          <img class="img-fluid custom-shadow" src="assets/mission.jpg" alt="Description of image">
         </div>
         <div class="col-lg-4 col-sm-12 mission-text">
           <p>My mission is to simplify understanding of diverse technologies. 
@@ -80,34 +73,31 @@
     </div>
   </div>
 
-    
-
-
-
-
   <div class="section" id="projects">
     <header class="d-inline-flex section-header"><h1>Projects</h1></header>
-    <div class="projects-container">
-      <div class="project">
-        <img src="assets/sudoku.png" alt="logo" class="project-image">
-        <div class="project-details">
-          <h3 class="project-name">Sudoku</h3>
-          <div class="links">
-            <a href="https://bradt615sudoku.netlify.app/" class="live">Live</a>
-            <a href="https://github.com/BradT615/Sudoku" class="repo">Repo</a>
+    <div class="container m-auto">
+      <div class="row g-5">
+        <div class="col-12 col-md-6 card-container">
+          <div class="card p-1 text-white custom-shadow"> <!-- reduced padding here -->
+            <img class="card-img-top rounded" src="assets/sudoku.png" alt="Sudoku Image">
+            <div class="card-body text-center">
+              <h3 class="card-title">Sudoku</h3>
+              <a href="https://bradt615sudoku.netlify.app/" class="btn btn-custom card-link live mb-2">Live</a>
+              <a href="https://github.com/BradT615/Sudoku" class="btn btn-custom card-link repo mb-2">Repo</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="project">
-        <img src="assets/movie_database.png" alt="logo" class="project-image">
-        <div class="project-details">
-          <h3 class="project-name">Movie Database</h3>
-          <div class="links">
-            <a href="https://bradt615.github.io/MovieDatabase/" class="live">Live</a>
-            <a href="https://github.com/BradT615/MovieDatabase" class="repo">Repo</a>
+        <div class="col-12 col-md-6 card-container">
+          <div class="card p-1 text-white custom-shadow"> <!-- reduced padding here -->
+            <img class="card-img-top rounded" src="assets/movie_database.png" alt="Movie Image">
+            <div class="card-body text-center">
+              <h3 class="card-title">Movie Database</h3>
+              <a href="https://bradt615.github.io/MovieDatabase/" class="btn btn-custom card-link live mb-2">Live</a>
+              <a href="https://github.com/BradT615/MovieDatabase" class="btn btn-custom card-link repo mb-2">Repo</a>
+            </div>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   </div>
 
@@ -140,7 +130,7 @@
     <div class="contact-wrapper">
       <div class="container" id="contact-container">
         <div class="row m-2">
-          <div class="col-12">
+          <div class="col-12 custom-shadow">
             <form>
               <div class="form-group">
                 <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
