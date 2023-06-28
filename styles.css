@@ -15,6 +15,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   scroll-padding-top: 66px;
+  overflow-x: hidden;
 }
 .custom-shadow {
   filter: drop-shadow(0 0 10px rgba(52, 252, 255, 0.6));
@@ -141,9 +142,13 @@ body {
 .mission-text {
   padding: 20px;
   font-size: 22px;
-  border: 1px solid var(--accent-color);
-  border-radius: 20px;
+  /* border: 1px solid var(--accent-color);
+  border-radius: 20px; */
 }
+
+/* * {
+  border: 1px solid red;
+} */
 
 #projects .card {
   max-width: 400px;
@@ -178,15 +183,12 @@ body {
 #contact {
   position: relative;
 }
-.contact-wrapper {
-  height: 70vh;
-}
 #contact-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 70vh;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0;
 }
 .col-12 form {
